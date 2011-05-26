@@ -100,6 +100,8 @@ div.header div.about {
 
 div.map {
     margin: 20px auto;
+    width: 900px;
+    height: 443px;
 }
 
 div..map img {
@@ -120,6 +122,12 @@ ul.itinerary li {
     margin-bottom: 5px;
     float: left;
     background-color: #CCC;
+    cursor: default;
+}
+
+ul.itinerary li.selected {
+    background-color: #222;
+    color: white;
 }
 
 div.credits {

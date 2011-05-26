@@ -2,6 +2,245 @@
 <html>
     <head>
         <link rel="stylesheet" href="static/css/core.css" />
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+
+            var places = [
+                {
+                    "lat": 41.878113599999999,
+                    "lng": -87.629798199999982,
+                    "name": "Chicago, IL"
+                },
+                {
+                    "lat": 42.331426999999998,
+                    "lng": -83.0457538,
+                    "name": "Detroit, MI"
+                },
+                {
+                    "lat": 43.653523999999997,
+                    "lng": -79.383906899999999,
+                    "name": "Toronto, Ontario, Canada"
+                },
+                {
+                    "lat": 43.0962143,
+                    "lng": -79.0377388,
+                    "name": "Niagara Falls, Canada"
+                },
+                {
+                    "lat": 44.279491100000001,
+                    "lng": -73.979871300000013,
+                    "name": "Lake Placid, NY"
+                },
+                {
+                    "lat": 45.508888900000002,
+                    "lng": -73.554166699999996,
+                    "name": "Montreal, QC, Canada"
+                },
+                {
+                    "lat": 44.906190600000002,
+                    "lng": -66.989978500000007,
+                    "name": "Eastport, ME"
+                },
+                {
+                    "lat": 42.358430800000001,
+                    "lng": -71.059773199999995,
+                    "name": "Boston, MA"
+                },
+                {
+                    "lat": 40.7143528,
+                    "lng": -74.005973100000006,
+                    "name": "New York, NY"
+                },
+                {
+                    "lat": 39.952334999999998,
+                    "lng": -75.163789000000008,
+                    "name": "Philadelphia, PA"
+                },
+                {
+                    "lat": 38.895111800000002,
+                    "lng": -77.036365799999999,
+                    "name": "Washington D.C., DC"
+                },
+                {
+                    "lat": 36.072635400000003,
+                    "lng": -79.791975400000013,
+                    "name": "Greensboro, NC"
+                },
+                {
+                    "lat": 35.960638400000001,
+                    "lng": -83.920739200000014,
+                    "name": "Knoxville, TN"
+                },
+                {
+                    "lat": 36.165889900000003,
+                    "lng": -86.784443199999998,
+                    "name": "Nashville, TN"
+                },
+                {
+                    "lat": 35.149534299999999,
+                    "lng": -90.048980099999994,
+                    "name": "Memphis, TN"
+                },
+                {
+                    "lat": 29.964722200000001,
+                    "lng": -90.070555600000034,
+                    "name": "New Orleans, LA"
+                },
+                {
+                    "lat": 29.762884400000001,
+                    "lng": -95.383061499999997,
+                    "name": "Houston, TX"
+                },
+                {
+                    "lat": 30.267153,
+                    "lng": -97.743060799999967,
+                    "name": "Austin, TX"
+                },
+                {
+                    "lat": 31.731129200000002,
+                    "lng": -106.46256240000002,
+                    "name": "Juarez, Mexico"
+                },
+                {
+                    "lat": 36.054444500000002,
+                    "lng": -112.1401108,
+                    "name": "Grand Canyon Village, AZ"
+                },
+                {
+                    "lat": 36.114646,
+                    "lng": -115.17281600000001,
+                    "name": "Las Vegas, NV"
+                },
+                {
+                    "lat": 34.052234200000001,
+                    "lng": -118.24368490000001,
+                    "name": "Los Angeles, CA"
+                },
+                {
+                    "lat": 37.774929499999999,
+                    "lng": -122.41941550000001,
+                    "name": "San Francisco, CA"
+                },
+                {
+                    "lat": 45.5234515,
+                    "lng": -122.6762071,
+                    "name": "Portland, OR"
+                },
+                {
+                    "lat": 47.606209499999999,
+                    "lng": -122.3320708,
+                    "name": "Seattle, WA"
+                },
+                {
+                    "lat": 49.261226000000001,
+                    "lng": -123.1139268,
+                    "name": "Vancouver, British Columbia, Canada"
+                },
+                {
+                    "lat": 48.361262000000004,
+                    "lng": -119.58338689999999,
+                    "name": "Okanogan, WA"
+                },
+                {
+                    "lat": 47.658780200000002,
+                    "lng": -117.42604660000001,
+                    "name": "Spokane, WA"
+                },
+                {
+                    "lat": 48.8763535,
+                    "lng": -115.0537779,
+                    "name": "Eureka, MT"
+                },
+                {
+                    "lat": 47.500235400000001,
+                    "lng": -111.30080829999997,
+                    "name": "Great Falls, MT"
+                },
+                {
+                    "lat": 46.808326800000003,
+                    "lng": -100.78373920000001,
+                    "name": "Bismarck, ND"
+                },
+                {
+                    "lat": 44.979965399999998,
+                    "lng": -93.263836099999992,
+                    "name": "Minneapolis, MN"
+                },
+                {
+                    "lat": 41.878113599999999,
+                    "lng": -87.629798199999982,
+                    "name": "Chicago, IL"
+                }
+            ];
+
+            $(document).ready(function () {
+
+                // Create the map
+                var map = new google.maps.Map($('div.map')[0], {
+                    zoom: 4,
+                    center: new google.maps.LatLng(40, -96),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    disableDefaultUI: true,
+                    draggable: false,
+                    scrollwheel: false,
+                    disableDoubleClickZoom: true
+                });
+
+                // Array of LatLng objects, later used to create the Polyline
+                var coords = [];
+
+                // The list of places
+                var ul = $('ul.itinerary');
+
+                $.each(places, function (index, place) {
+
+                    // Create the LatLng instance for this location
+                    var latlng = new google.maps.LatLng(place.lat, place.lng);
+
+                    // Add LatLng to array for Polyline
+                    coords.push(latlng);
+
+                    // Add a marker to the map
+                    var marker = new google.maps.Marker({
+                        position: latlng,
+                        map: map,
+                        title: place.name
+                    });
+
+
+                    // Create and add <li> to list of places
+                    var li = $('<li>').text(place.name);
+                    ul.append(li);
+
+                    // Set up event listeners for <li>
+                    li.hover(function (event) {
+                        marker.setAnimation(google.maps.Animation.BOUNCE);
+                        li.addClass('selected');
+                    }, function (event) {
+                        marker.setAnimation(null);
+                        li.removeClass('selected');
+                    });
+
+                    // Set up event listeners for the marker
+                    google.maps.event.addListener(marker, 'mouseover', function (event) {
+                        li.addClass('selected');
+                    });
+
+                    google.maps.event.addListener(marker, 'mouseout', function (event) {
+                        li.removeClass('selected');
+                    });
+                });
+
+                var path = new google.maps.Polyline({
+                    path: coords,
+                    strokeColor: '#9999FF',
+                    map: map
+                });
+            });
+        </script>
+
         <title>Andy in America</title>
     </head>
     <body>
@@ -16,45 +255,10 @@
                     if you can help.
                 </div>
             </div>
-            <div class="map">
-                <img src="static/images/route.jpg" alt="Route map" />
-            </div>
+            <div class="map">JavaScript required</div>
 
             <h2>Provisional itinerary</h2>
             <ul class="itinerary">
-                <li>Chicago, IL</li>
-                <li>Detroit, MI</li>
-                <li>Toronto, Ontario, Canada</li>
-                <li>Niagara Falls, NY</li>
-                <li>Lake Placid, NY</li>
-                <li>Montreal, QC, Canada</li>
-                <li>Eastport, ME</li>
-                <li>Boston, MA</li>
-                <li>New York, NY</li>
-                <li>Philadelphia, PA</li>
-                <li>Washington D.C., DC</li>
-                <li>Greensboro, NC</li>
-                <li>Knoxville, TN</li>
-                <li>Nashville, TN</li>
-                <li>Memphis, TN</li>
-                <li>New Orleans, LA</li>
-                <li>Houston, TX</li>
-                <li>Austin, TX</li>
-                <li>Ju&aacute;rez, Mexico</li>
-                <li>Grand Canyon Village, AZ</li>
-                <li>Las Vegas, NV</li>
-                <li>Los Angeles, CA</li>
-                <li>San Francisco, CA</li>
-                <li>Portland, OR</li>
-                <li>Seattle, WA</li>
-                <li>Vancouver, British Columbia, Canada</li>
-                <li>Okanogan, WA</li>
-                <li>Spokane, WA</li>
-                <li>Eureka, MT</li>
-                <li>Great Falls, MT</li>
-                <li>Bismarck, ND</li>
-                <li>Minneapolis, MN</li>
-                <li>Chicago, IL.</li>
             </ul>
 
             <h2>Elsewhere</h2>
