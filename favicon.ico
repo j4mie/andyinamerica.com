@@ -1,0 +1,74 @@
+<html><head><title>ConvertICO.com - Convert .PNG format files to .ICO or .ICO format files to .PNG : Windows Vista compatible icons</title>
+<META name="description" content="Free Online Icons Converter - Convert PNG to ICO and ICO to PNG files : Windows Vista compatible icons">
+<META name="keywords" content="convert, png, ico, free, freeware, vista, icons, ico">
+<META content="follow, index, all" name="robots"><META content="en" name="language">
+<link rel="StyleSheet" type="text/css" href="ico_style.css">
+<!--[if IE]>
+<style type="text/css">img { behavior: url(scripts/iepngfix.htc) }</style>
+<![endif]--></head>
+<body><table width="468" height="134" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01"><tr><td width="384" height="80" colspan="11"><a href="http://www.convertico.com" title="ConvertICO.com : Convert PNG & ICO files for FREE"><img src="./template/images/convertico.gif" alt="ConvertICO.com : Convert PNG & ICO files for FREE" width="338" height="86" border="0"></a></td></tr><tr><td width="28" height="54" background="./template/images/index_2.gif"><img src="./template/images/index_3.gif" width="10" height="54" alt=""></td><td width="43" height="54" background="./template/images/index_2.gif"><a href="http://www.vistaico.com/preview.htm"><img src="template/images/index_03.gif" alt="Preview" width="43" height="54" border="0"></a></td>
+<td width="27" height="54" background="./template/images/index_2.gif">&nbsp;</td><td width="42" height="54" background="./template/images/index_2.gif"><a href="http://www.vistaico.com/info.htm"><img src="./template/images/index_05.gif" alt="Info" width="42" height="54" border="0"></a></td><td width="28" height="54" background="./template/images/index_2.gif">&nbsp;</td><td width="66" height="54" background="./template/images/index_2.gif"><a href="http://www.vistaico.com/download.htm"><img src="./template/images/index_07.gif" alt="Download Icons" width="66" height="54" border="0"></a></td>
+<td width="27" height="54" background="./template/images/index_2.gif">&nbsp;</td><td width="66" background="./template/images/index_2.gif"><a href="http://www.vistaico.com/wallpapers.htm"><img src="./template/images/index_15.gif" alt="Wallpapers" width="66" height="54" border="0"></a></td><td width="28" height="54" background="./template/images/index_2.gif">&nbsp;</td><td width="66" height="54" background="./template/images/index_2.gif"><a href="http://www.convertico.com"><img src="./template/images/index_08.gif" alt="Convert PNG & ICO files" width="66" height="54" border="0"></a></td><td width="27" height="54" align="right" background="./template/images/index_2.gif"><img src="template/images/index_1.gif" width="10" height="54" alt=""></td></tr></table>
+<div align="center"><script type="text/javascript"><!--
+google_ad_client = "pub-7595495923317249";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "E2530B";
+google_color_url = "73A719";
+google_color_text = "3370A8";
+//--></script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div>
+<table width="468" border="0" align="center" cellpadding="0" cellspacing="0"><tr><td width="468"><span class="style1">Convert<span class="style3">ICO</span></span> <span class="style4"> is a <b>Free Online Converter</b> - fast (you don't need to register or to install any software) and easy to use (3 clicks to convert the PNG or ICO file are enough) - able to convert <b>PNG to ICO</b> (<b>Windows 7, Vista</b> compatible icons) and <b>ICO to PNG</b> format files.</span></div></td></tr><tr><td align="center"><table width="468" border="0" cellpadding="10" cellspacing="0" class="tab"><tr><td align="left"><script type="text/javascript">
+function validate()
+{
+	var path,ext;
+	path=document.myform.remoteimgfile.value;
+	if(document.myform.imgfile.value.length>0)
+		path=document.myform.imgfile.value;
+	if(path.length>0)
+	{
+		ext=path.substring(path.length-4);
+		ext=ext.toLowerCase();
+		if(ext!='.png' && ext!='.ico')
+		{
+			alert("Please select a PNG or ICO image");
+			return false;
+		}
+	}
+	return true;
+}
+</script>
+<a name="down"></a>
+<form name="myform" enctype="multipart/form-data" method="POST" onsubmit="return validate();">
+	<h3><font color="#1192DF">I. Enter the URL to PNG or ICO file</font></h3>
+	<input name="remoteimgfile" type="text" size="50" value="http://" /></br>
+	<font face="Arial, Helvetica, sans-serif" size="1">Important: you have to include the "http://"</font>
+	<h3><font color="#DE54DE">II. Upload a PNG or ICO file</font></h3>
+    <input type="hidden" name="MAX_FILE_SIZE" value="500000" />
+    <input name="imgfile" size="50" type="file"/><br /><br/><input type="submit" value="       CONVERT       " />
+</form></td></tr></table></td></tr><tr><td width="468" style="border-bottom:5px solid #6DA3C6;padding-bottom:4px;"></span><h3>Recently Converted Icons</h3>
+<div align="center"><img src="/images/1306403153.42/_previmg.png" alt='The latest Converted Icons'/><img src="/images/1306403149.87/_previmg.png" alt='The latest Converted Icons'/><img src="/images/1306403148.2/_previmg.png" alt='The latest Converted Icons'/><img src="/images/1306403146.7/_previmg.png" alt='The latest Converted Icons'/><img src="/images/1306403146.29/_previmg.png" alt='The latest Converted Icons'/><img src="/images/1306403144.31/_previmg.png" alt='The latest Converted Icons'/><img src="/images/1306403142.16/_previmg.png" alt='The latest Converted Icons'/><img src="/images/1306403140.65/_previmg.png" alt='The latest Converted Icons'/><img src="/images/1306403139.99/_previmg.png" alt='The latest Converted Icons'/><img src="/images/1306403136.91/_previmg.png" alt='The latest Converted Icons'/><img src="/images/1306403134.43/_previmg.png" alt='The latest Converted Icons'/><img src="/images/1306403131.86/_previmg.png" alt='The latest Converted Icons'/><img src="/images/1306403129.6/_previmg.png" alt='The latest Converted Icons'/><img src="/images/1306403128.88/_previmg.png" alt='The latest Converted Icons'/></div><br><div style="border-bottom: 2px dotted #ABC9F7;"></div>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7595495923317249";
+/* 336x280, created 4/6/11 */
+google_ad_slot = "9617101975";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<h3>How to use ConvertICO</h3><span class="style4">ConvertICO is able to convert PNG or ICO (Windows Vista compatible) files located on your computer or on a webserver.<br><font color="#1192DF"><b>I. To convert a file located on a webserver</b></font>: just enter the URL <font size="1">(ex: http://www.google.com/thefile.png)</font> and click the CONVERT button.<br><font color="#DE54DE"><b>II. To convert a file located on your computer</b></font>: click Browse and locate the file on your computer, then click the CONVERT button.</span><br><br></td></tr></table>
+<table width="468" border="0" align="center" cellpadding="0" cellspacing="0"><tr><td><div align="center"><span class="style5">&copy; 2008-2011 VistaICO.com, All Rights Reserved</span></div></td></tr></table><table width="468" border="0" align="center" cellpadding="0" cellspacing="0"><tr><td><div align="center"><br><a href="http://www.vistaicons.com"><img src="./template/images/vista_icons_88x31.gif" alt="Free Vista Icons" width="88" height="31" border="0"></a><br><span class="style5">A <a href="http://www.vistaicons.com" title="VistaIcons.com - Free Vista Icons">Vista Icons</a> website</span></div></td></tr></table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-320719-8";
+urchinTracker();
+</script></body></html>
