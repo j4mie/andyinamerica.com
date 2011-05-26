@@ -63,6 +63,7 @@ p {
 
 h2 {
     font-weight: bold;
+    margin-top: 20px;
 }
 
 a {
@@ -99,7 +100,7 @@ div.header div.about {
 }
 
 div.map {
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     width: 900px;
     height: 443px;
 }
